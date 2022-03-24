@@ -5,11 +5,11 @@ const SearchDropdown = () => {
     const [selectedArray, setSelectedArray] = useState([]);
     const [searchTerm, setSearchTerm] = useState(null);
     const [colorArray, setColorArray] = useState(colors);
-	const [dropdownVisible, setDropdownVisible] = useState(false);
+    const [dropdownVisible, setDropdownVisible] = useState(false);
 
     const dropdownInputWrapperRef = useRef(null);
-	const dropdownInputRef = useRef(null);
-	const dropdownRef = useRef(null);
+    const dropdownInputRef = useRef(null);
+    const dropdownRef = useRef(null);
 
     const closeDropdown = useCallback(() => {
 		setDropdownVisible(false);
@@ -56,7 +56,7 @@ const SearchDropdown = () => {
         } catch (err) {
             console.error(`error while render multiSelectedItem:: ${err.message}`);
         }
-	};
+    };
 
     const handleSearch = (event) => {
         try {
@@ -105,7 +105,7 @@ const SearchDropdown = () => {
         } catch (err) {
             console.error(`error while rendering dropdown input:: ${err.message}`);
         }
-	};
+    };
 
     const renderClearButton = () => {
         try {
@@ -121,13 +121,13 @@ const SearchDropdown = () => {
         } catch (err) {
             console.error(`error while rendering clear button:: ${err.message}`);
         }
-	};
+    };
 
     const renderDropdownIcon = () => {
-		return (
-			<button className="dropdown-icon">></button>
-		);
-	};
+        return (
+	    <button className="dropdown-icon">></button>
+        );
+    };
 
     const handleAddition = (event) => {
         try {
