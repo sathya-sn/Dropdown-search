@@ -14,6 +14,6 @@ Make sure to run the app using 'npm start' to get the output of the project.
 
 - searchDropdownComponent - It includes entire code that needed to alter the dropdown, done using react and hooks
 
-### Components
+### Dependencies
 
 - React, Sass, Loaders
